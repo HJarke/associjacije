@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<style>
+    #pokus {
+        color: #A0596B;
+        display: grid;
+        position: absolute;
+        grid-template-rows: repeat(4, 1fr);
+        justify-self: left;
+        background-color: #FEC343;
+        border: 3px solid #FEC343;
+        box-shadow: 4px 1px 50px #a08f6b;
+        justify-self: center;
+        top: 400px;
+        border-radius: 10px;
+        width: 400px;
+    }
+    #cont {
+        border-radius: 10px;
+        background-color: #FEC343;
+        border: 3px solid #FEC343;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        position: absolute;
+        box-shadow: 4px 1px 50px #a08f6b;
+        gap: 5px;
+        justify-self: center;
+    }
+    .fBtn {
+        border-radius: 50px;
+        width: 300px;
+        height: 50px;
+        color: white;
+        border: none;
+        box-shadow: 1px 1px 4px black;
+    }
+    .sBtn {
+        border-radius: 5px;
+        border-radius: 10px;
+        width: 300px;
+        height: 50px;
+        color: white;
+        border: none;
+        box-shadow: 1px 1px 4px black;
+    }
+    .c1 {
+        background-color: red;
+    }
+    .c2 {
+        background-color: blue;
+    }
+    .c3 {
+        background-color: green;
+    }
+    .c4 {
+        background-color: black;
+    }
+    #eBtn {
+        border-radius: 0px;
+        border: none;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        width: 600px;
+        height: 50px;
+        color: white;
+        background-color: #55134E;
+    }
+</style>
+<body style="background-color: #EF7351; display: grid;">
+    <div id="cont">
+        <button value="a1" id="fBtn1" class="fBtn c1">A1</button>
+        <button value="b1" id="fBtn2" class="fBtn c2">B1</button>
+        <button value="c1" id="fBtn3" class="fBtn c3">C1</button>
+        <button value="d1" id="fBtn4" class="fBtn c4">D1</button>
+        <button value="a2" id="fBtn5" class="fBtn c1">A2</button>
+        <button value="b2" id="fBtn6" class="fBtn c2">B2</button>
+        <button value="c2" id="fBtn7" class="fBtn c3">C2</button>
+        <button value="d2" id="fBtn8" class="fBtn c4">D2</button>
+        <button value="a3" id="fBtn9" class="fBtn c1">A3</button>
+        <button value="b3" id="fBtn10" class="fBtn c2">B3</button>
+        <button value="c3" id="fBtn11" class="fBtn c3">C3</button>
+        <button value="d3" id="fBtn12" class="fBtn c4">D3</button>
+        <button value="a4" id="fBtn13" class="fBtn c1">A4</button>
+        <button value="b4" id="fBtn14" class="fBtn c2">B4</button>
+        <button value="c4" id="fBtn15" class="fBtn c3">C4</button>
+        <button value="d4" id="fBtn16" class="fBtn c4">D4</button>
+        <button value="a" id="fBtn17" class="sBtn c1">A</button>
+        <button value="b" id="fBtn18" class="sBtn c2">B</button>
+        <button value="c" id="fBtn19" class="sBtn c3">C</button>
+        <button value="d" id="fBtn20" class="sBtn c4">D</button>
+        <button value="kon" id="eBtn" class="sBtn">KONAČNO</button>
+    </div>
+    <div id="pokus">
+        <p>Neispravni pokusaji:</p>
+        <p id="pA">A: </p>
+        <p id="pB">B: </p>
+        <p id="pC">C: </p>
+        <p id="pD">D: </p>
+        <p id="pK">Konacno: </p>
+    </div>
+    <script src="java.js"></script>
+    <script src="data.js"></script>
+
+</body>
