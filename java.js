@@ -28,18 +28,38 @@ const pd = document.querySelector("#pD");
 const pk = document.querySelector("#pK");
 
 
-
 document.querySelectorAll(".fBtn").forEach(item => {
     item.addEventListener("click", event => {
         item.innerHTML = item.getAttribute("value")
     }) 
 });
-
+let link = ""
 document.querySelectorAll(".sBtn").forEach(item => {
     item.addEventListener("click", event => {
         let res = prompt("Unesite resenje", "")
-        if(res == item.getAttribute("value")) {
-            item.innerHTML = "RES"
+        if(res == item.getAttribute("value").toLowerCase()) {
+            switch(item.innerHTML) {
+                case "A": 
+                alert("Tacno! Reseno je polje A!");
+                link = ".r1"
+                break;
+                case "B": alert("Tacno! Reseno je polje B!");
+                link = ".r2"
+                break;
+                case "C": alert("Tacno! Reseno je polje C!");
+                link = ".r3"
+                break;
+                case "D": alert("Tacno! Reseno je polje D!");
+                link = ".r4"
+                break;
+                default: 
+                alert("Tacno, pobedili Ste!");
+                link = ".Btn"
+                break;
+            }
+            document.querySelectorAll(link).forEach(element => {
+                element.innerHTML = element.getAttribute("value")
+            });
         }
         else {
             alert("Neispravno!")
